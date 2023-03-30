@@ -6,7 +6,7 @@ def solution (a, b, c):
 	if ((c * c - b) % a) != 0:
 		return "NO SOLUTION"
 	x = (c * c - b) // a
-	if c < 0 or x < (-b/a):
+	if c < 0 or abs(x) < (-b/a):
 		 return 'NO SOLUTION'
 	return x
 
